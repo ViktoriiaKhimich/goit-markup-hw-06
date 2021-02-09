@@ -26,8 +26,14 @@
           >
 
           <ul class="nav-list list">
-            <li class="item link">
-              <a href="" class="link current-link">Студия</a>
+            <li class="item current-link">
+              <a
+                href="index.html"
+                class="link current"
+                target="_blank"
+                rel="noopener norefferer"
+                >Студия
+              </a>
             </li>
             <li class="item">
               <a
@@ -473,10 +479,10 @@
           <p class="call-to-action">Подпишитесь на рассылку</p>
 
           <form name="subscribe" action="" class="subscribe-form">
-            <label for=""></label>
             <input
               type="email"
               name="email"
+              id="email"
               placeholder="E-mail"
               class="subscribe-input"
             />
@@ -499,6 +505,63 @@
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
+
+        <form class="modal-form">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
+          <label for="name" class="label">Имя</label>
+          <div class="form-input">
+            <input type="text" name="user-name" id="name" class="label-input" />
+            <svg class="icon" width="12" height="12">
+              <use href="./images/symbol-defs.svg#person"></use>
+            </svg>
+          </div>
+
+          <label for="tel" class="label">Телефон</label>
+          <div class="form-input">
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              class="label-input"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            />
+            <svg class="icon" width="13" height="13">
+              <use href="./images/symbol-defs.svg#telephone"></use>
+            </svg>
+          </div>
+
+          <label for="mail" class="label">Почта</label>
+          <div class="form-input">
+            <input type="email" name="email" id="mail" class="label-input" />
+            <svg class="icon" width="15" height="12">
+              <use href="./images/symbol-defs.svg#mail"></use>
+            </svg>
+          </div>
+
+          <label for="feedback" class="label">Комментарий</label>
+          <textarea
+            name="feedback"
+            id="feedback"
+            placeholder="Введите текст"
+            class="feedback-input"
+          ></textarea>
+
+          <div class="policy-box">
+            <input
+              type="checkbox"
+              name="user-policy"
+              value="agree"
+              id="policy"
+              class="agree-policy visually-hidden"
+            />
+            <label for="policy" class="label-agree-policy">
+              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+            </label>
+          </div>
+
+          <button type="submit" class="modal-submit-button">Отправить</button>
+        </form>
       </div>
     </div>
 
