@@ -393,6 +393,7 @@ html {
 .modal-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 40px;
 }
 
@@ -487,18 +488,13 @@ html {
   border-color: var(--accent-color);
 }
 
-.policy-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .label-agree-policy {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: center;
 }
 
 .label-agree-policy a {
@@ -508,6 +504,7 @@ html {
 .label-agree-policy::before {
   content: "";
   display: inline-block;
+  margin-right: 10px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
